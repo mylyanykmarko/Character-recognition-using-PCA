@@ -33,8 +33,3 @@ def read_img(path_to_file):
     (thresh, img_bw) = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
     return img_bw
 
-
-if __name__ == "__main__":
-    path = "training_dataset/A.png"
-    m = dataset_to_matrix("./training_dataset/")
-    print(len(m[0]))
